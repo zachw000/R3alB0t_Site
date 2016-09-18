@@ -1,3 +1,4 @@
+<?php include 'topbar.php'; include 'navbar.php'; ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -92,5 +93,20 @@ function appendScripts($foldersDown) {
 function bodyMain($attributes) {
 ?>
 	<body<?php if ($attributes != NULL) echo " " . $attributes; ?>>
+<?php
+}
+
+function topHeader($layout, $prependData) {
+?>
+	<div class="page-wrapper-row">
+		<div class="page-wrapper-top">
+			<div class="page-header">
+				<?php
+					generateTopBar($layout, $prependData);
+					generateNavBar($layout, $prependData);
+				?>
+			</div>
+		</div>
+	</div>
 <?php
 }

@@ -1,11 +1,14 @@
 <?php
 include 'templates/header.php';
-createHeader("R3alB0at Beta", 0);
+$DIRS_DOWN = 0;
+
+createHeader("R3alB0at Beta", $DIRS_DOWN);
 bodyMain("class='page-container-bg-solid page-md'");
 ?>
-<div class="page-wrapper">
 	<?php
-	appendScripts(0);
+	include 'templates/wrapper.php';
+	wrapper("home", $DIRS_DOWN);
+	appendScripts($DIRS_DOWN);
 	?>
 	</body>
 </html>
