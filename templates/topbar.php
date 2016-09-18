@@ -32,6 +32,19 @@ function generateTopBar($layout, $prependData) {
 									<div class="slimScrollDiv" style="position:relative; overflow: hidden; width: auto; height: 300px;">
 										<ul class="dropdown-menu-list scroller" style="height: 300px; overflow: hidden; width: auto;" data-handle-color="#637283" data-initialized="1">
 											<!-- SHOW ALL ALERTS UP TO 9 ITEMS //-->
+											<!-- EXAMPLE
+											<li>
+												<a href="javascript:;">
+													<span class="time">10 mins</span>
+													<span class="details">
+														<span class="label label-sm label-icon label-<info, warning, or danger>">
+															<i class="fa fa-bell-o"></i>
+														</span>
+														Alert message
+													</span>
+												</a>
+											</li>
+											//-->
 										</ul>
 										<div class="slimScrollBar"></div>
 										<div class="slimScrollRail"></div>
